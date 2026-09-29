@@ -1,5 +1,9 @@
 # AML Transaction Monitoring with XGBoost
 
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Space-yellow)](https://huggingface.co/spaces/raja-reivan/Money-Laundering-Detection)
+
+**Live Demo:** Explore the Money Laundering Detection model on [Hugging Face Spaces](https://huggingface.co/spaces/raja-reivan/Money-Laundering-Detection).
+
 Machine learning project for detecting potentially fraudulent / money-laundering transactions using **XGBoost** with extensive transaction-level feature engineering and **stateful streaming inference**.
 
 The project includes a **Streamlit/Gradio application** that simulates how an AML transaction monitoring model can process transactions arriving sequentially over time. Instead of generating synthetic transactions, the application uses the **test set as future incoming transactions**.
@@ -31,6 +35,18 @@ The main idea is not only to evaluate whether a transaction looks suspicious bas
 ---
 
 # Dataset
+
+## 📊 Data Overview
+
+This project utilizes the **Synthetic Anti-Money Laundering Dataset (SAML-D)** for model training, testing, and evaluation. SAML-D is a typology-based synthetic dataset designed specifically to simulate complex transaction patterns and advance transaction monitoring systems.
+
+* **Dataset Source:** Available on [Kaggle - Synthetic Transaction Monitoring Dataset (AML)](https://www.kaggle.com/datasets/berkanoztas/synthetic-transaction-monitoring-dataset-aml)
+* **Official Paper:** [IEEE Xplore (Oztas et al., 2023)](https://ieeexplore.ieee.org/document/10356193)
+
+### Dataset Attribution & Reference
+This project relies on the dataset created by Berkan Oztas et al. If you reference the data or building upon this repository, please credit and cite the original paper:
+
+> B. Oztas, D. Cetinkaya, F. Adedoyin, M. Budka, H. Dogan and G. Aksu, *"Enhancing Anti-Money Laundering: Development of a Synthetic Transaction Monitoring Dataset,"* 2023 IEEE International Conference on e-Business Engineering (ICEBE), Sydney, Australia, 2023, pp. 47-54, doi: [10.1109/ICEBE59045.2023.00028](https://doi.org/10.1109/ICEBE59045.2023.00028).
 
 The original dataset contains the following features:
 
